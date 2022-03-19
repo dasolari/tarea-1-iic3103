@@ -1,0 +1,29 @@
+{
+  "root": true,
+  "env": {
+    "es2020": true,
+    "node": true,
+    "jest/globals": true
+  },
+  "extends": [
+    "airbnb-typescript/base",
+    "plugin:jest/recommended",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": ["./tsconfig.json"],
+    "sourceType": "module"
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "prettier",
+    "jest"
+  ],
+  "rules": {
+    "import/extensions": 0,
+    "import/no-extraneous-dependencies": 0
+  }
+}
